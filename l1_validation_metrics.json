@@ -1,0 +1,49 @@
+{
+  "method": "Frozen ResNet18 + linear MAE head",
+  "seeds": [
+    {
+      "seed": 6201,
+      "best_epoch": 1,
+      "macro_mae": 0.23776227235794067,
+      "axis_mae": [
+        0.2446691393852234,
+        0.20547212660312653,
+        0.2631453275680542
+      ],
+      "pooled_rmse": 0.35946398973464966
+    },
+    {
+      "seed": 6202,
+      "best_epoch": 1,
+      "macro_mae": 0.24068285524845123,
+      "axis_mae": [
+        0.2532100975513458,
+        0.20054475963115692,
+        0.26829391717910767
+      ],
+      "pooled_rmse": 0.364330917596817
+    },
+    {
+      "seed": 6203,
+      "best_epoch": 1,
+      "macro_mae": 0.2448594719171524,
+      "axis_mae": [
+        0.2510402798652649,
+        0.20102310180664062,
+        0.28251492977142334
+      ],
+      "pooled_rmse": 0.3702760934829712
+    }
+  ],
+  "mean_macro_mae": 0.24110153317451477,
+  "sample_sd_macro_mae": 0.003567075665043909,
+  "median_baseline_mae": 0.2576257288455963,
+  "ridge_validation_mae": 0.2662600002502207,
+  "epochs": 100,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "batch_size": 128,
+  "initialization": "zero weights, train median bias",
+  "selection": "minimum validation MAE including epoch0 constant median",
+  "test_evaluated": false
+}

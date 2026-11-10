@@ -1,0 +1,38 @@
+{
+  "seed": 6001,
+  "torch_version": "2.15.0+cpu",
+  "device": "cpu",
+  "data": "<prepared dataset>",
+  "train_count": 3473,
+  "validation_count": 1742,
+  "baseline": {
+    "mae_per_axis": [
+      0.24881301820278168,
+      0.23451322317123413,
+      0.36654216051101685
+    ],
+    "rmse_per_axis": [
+      0.48801204562187195,
+      0.35406559705734253,
+      0.47146284580230713
+    ],
+    "macro_mae": 0.28328937292099
+  },
+  "cnn_validation": {
+    "mae_per_axis": [
+      0.24537311494350433,
+      0.19983728229999542,
+      0.3450971841812134
+    ],
+    "rmse_per_axis": [
+      0.45337316393852234,
+      0.29715171456336975,
+      0.4180387854576111
+    ],
+    "macro_mae": 0.2634357213973999
+  },
+  "best_epoch": 2,
+  "selection": "minimum validation macro MAE",
+  "test_evaluated": false,
+  "limits": "Single seed; four-recording pilot; bag-time pairing, latency and force axes unvalidated."
+}
